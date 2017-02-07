@@ -1,0 +1,25 @@
+{
+  "name": "QUIZ_1",
+  "version": "0.0.1",
+  "description": "awesome_tweets",
+  "main": "app.js",
+  "repository": {},
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "xinxin xue",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "faker": "^3.1.0",
+    "morgan": "^1.8.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

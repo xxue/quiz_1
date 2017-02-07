@@ -1,0 +1,55 @@
+
+  html {
+  font-family: "Chalkduster";
+  font-weight: 100;
+  color: black;
+}
+
+body {
+  background-image: url(img/deer1_jt.jpg);
+  background-size: 100%;
+}
+
+.navigation {
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  border: 2px solid grey;
+}
+
+.navigation nav {
+  height: 100%;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: thin solid white;
+}
+
+.pic {
+display: flex;
+padding-top: 1.5px;
+width: 70px;
+height: 60px;
+}
+
+.navbar-right{
+display: flex;
+justify-content: flex-end;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+.container {
+font-size: 2em;
+position: absolute;
+top: 60%;
+left: 60%;
+margin-top: -100px;
+margin-left: -200px;
+}
+textarea {
+ resize: none;
+ }
