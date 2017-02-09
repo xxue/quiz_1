@@ -1,0 +1,65 @@
+
+
+    <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="img/breath_jt.jpg" width = "30px" height = "30px" alt="">
+        </div>
+      <div class="col-md-4"><h3>Xinxin Xue</h3></div>
+      <div class="col-md-4"><p>@intelcoll</p></div>
+    </div>
+      <div class="row">
+      <div class="col-md-6"><p>Messages</p></div>
+            </div>
+            <div class="row">
+              <h4>12</h4>
+            </div>
+            </div>
+
+        <div class="container">
+          <h3>Trending AweTweets</h3>
+      <br>
+        <ul style="list-style:none">
+           <% for (let i of trending) { %>
+             <a href=""><li><%= i %></li></a>
+           <% } %>
+        </ul>
+          </div>
+
+      <form action = "/dash" method="post">
+        <div class="col-xs-8">
+          <textarea class="form-control hresize" name="tweet" rows="8" cols="80" maxlength="255"></textarea><br>
+          <input type="submit" name="submit"></input>
+        </div>
+            <ul>
+              <% for (let j of tweets) { %>
+                <li>
+                  <div>
+                    <img src="img/flower.jpg" width="40px">
+                  </div>
+                  <div>
+                    <h5><%= j[0] %></h5>
+                    <p><%= j[1] %></p>
+                  </div>
+                  <div>Posted: <%= tweet[2] %></div>
+                </li>
+              <% } %>
+            </ul>
+
+        <% for (let i = 0; i < 4; i += 1) { %>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <textarea name="name" rows="4" cols="80">
+              <%= faker.lorem.paragraphs(1) %>
+            </textarea><br>
+            </div>
+        </div>
+        <% } %>
+
+      </form>
+    </div>
+
+
+
+  </body>
+</html>

@@ -1,85 +1,73 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Dashboard</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="/public/css/bootstrap.css">
-      <link rel="stylesheet" href="/public/css/themes/superhero.css">
-      <script src="js/jquery-3.1.1.js" charset="utf-8"></script>
-      <script src="js/bootstrap.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <header class = "navigation">
-      <nav>
-        <a class = "nav-pic"><img class="pic" src="img/puzzle_jt.jpg" ></a>
-        <div class = "navbar-right">
-          <ul><a = "black" href="/">Home</a></ul>
-        </div>
-      </nav>
-    </header>
-
-    <div class="row">
-      <div class="hidden-xs hidden-sm col-md-4 col-lg-4">
-        <div class="">
-          <div class="">
-            <img src="img/breath_jt.jpg" width="100px" alt="">
+<%- include('./partials/header') %>
+  <div class="container1">
+    <div id="leftdiv">
+      <div id="row1">
+        <div id="img">
+          <img src="img/breath_jt.jpg" width = "80px";
+            height = "70px";><br>
           </div>
-
-          <div class="container-fluid">
-            <h3>Xinxin Xue</h3>
-            <p>@intelcoll</p>
-
-            <div class="container-fluid" style="text-align:center">
-              <p>Messages</p>
-              <h4>12</h4>
-            </div>
-          </div>
+        <div id="names">
+          <p><strong>Xinxin Xue</strong></p>
+            <p>@intelcoll<p><br>
         </div>
+        <p class="message">Messages</p>
+        <p class="message">12</p>
+      </div>
 
-        <div class="container-fluid">
-          <h3>Trending AweTweets</h3>
-        </div><br>
-        <ul style="list-style:none">
-           <% for (let i of trending) { %>
-             <a href=""><li><%= i %></li></a>
-           <% } %>
-        </ul>
-
-      <form action = "/dash" method="post">
-        <div class="col-xs-8">
-          <textarea class="form-control hresize" name="tweet" rows="8" cols="80" maxlength="255"></textarea><br>
-          <input type="submit" name="submit"></input>
+      <div id="row2">
+        <h4 style="text-align: center">Trending AweTweets</h4><br>
+          <ul style="list-style:none">
+            <% for (let i of trending) { %>
+              <a href=""><li><%= i %></li></a>
+            <% } %>
+          </ul>
         </div>
-            <ul>
-              <% for (let j of tweets) { %>
-                <li>
-                  <div>
-                    <img src="img/flower.jpg" width="40px">
-                  </div>
-                  <div>
-                    <h5><%= j[0] %></h5>
-                    <p><%= j[1] %></p>
-                  </div>
-                  <div>Posted: <%= tweet[2] %></div>
-                </li>
-              <% } %>
-            </ul>
-
-        <% for (let i = 0; i < 4; i += 1) { %>
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <textarea name="name" rows="4" cols="80">
-              <%= faker.lorem.paragraphs(1) %>
-            </textarea><br>
-            </div>
-        </div>
-        <% } %>
-
-      </form>
     </div>
 
+    <div id="rightdiv">
+      <div id="rightrow1">
+        <form action = "/dash" method="post">
+          <div>
+            <label for="name">User</label>
+            <input type="text" name="name">
+          </div>
+          <div>
+          <textarea class="form-control hresize" name="tweet" rows="8" cols="80" maxlength="255"></textarea></div>
+          <input type="submit" name="submit"></input>
+        </form>
+
+        <% for (let i in cookies) { %>
+          <div id = "tweets">
+            <div>
+              <img src = "img/puzzle_jt.jpg" width="30" height="30">
+            </div>
+            <div id = "tweets_1">
+              <div id = "user">
+                  <%= i %>
+              </div>
+              <div id="content">
+                  <%= cookies[i] %>
+              </div>
+              <div id="date">
+                  <%= date %>
+              </div>
+          </div>
+      </div>
+      <% } %>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <textarea name="randomtweets" rows="4" cols="80">
+            <%=faker.lorem.paragraphs(1)%>
+          </textarea><br>
+          </div>
+      </div>
 
 
-  </body>
-</html>
+
+      </div>
+
+
+
+    </div>
+  </div>

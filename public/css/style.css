@@ -1,0 +1,147 @@
+
+  html {
+  font-weight: 100;
+  color: black;
+}
+
+body {
+  background-image: url(/img/deer1_jt.jpg);
+  background-size: 100%;
+}
+
+#nav-puzzle{
+display: flex;
+align: auto;
+padding-top: 2px;
+}
+
+#pic {
+height: 48px;
+width: 45px;
+}
+
+#words {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding-top: 200px;
+  font-family: Comic Sans MS;
+  color: black;
+}
+
+.container1{
+font-size: 2em;
+display: flex;
+position: absolute;
+width: 100%;
+height: 100%;
+padding-top: 32px;
+padding-left: 20px;
+padding-right: 20px;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap:  nowrap;
+flex-grow: 2;
+}
+
+#leftdiv {
+  /*background-color: white;*/
+  margin-top: 20px;
+  margin-left: 30px;
+  display: inline-block;
+  width: 25%;
+  /*flex-direction:row;
+  align-items: flex-start;
+  justify-content: space-around;*/
+}
+/*
+#user {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;;
+  justify-content: space-between ;
+  width: 95%;
+  height: 150px;
+}*/
+#row1 {
+  width: 80%;
+  display: block;
+  margin-top: 100px;
+  margin-left: 20px;
+  border: thin solid Beige;
+  background-color: rgba(215,193,160,0.4);
+  height: 20%
+  }
+
+#img{
+  display: inline-block;
+  float: left;
+  padding-top: 5px;
+  padding-left: 20px
+  /*flex-direction: row;*/
+  /*align-items: flex-start;
+  justify-content: flex-start;*/
+  /*margin-top: 80px;*/
+}
+
+#names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  padding-top: 10px;
+  height:70%
+}
+
+.message{
+  font-size: 12px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  height:7%
+}
+
+#row2 {
+  width: 80%;
+  display: block;
+  margin-top: 50px;
+  margin-left: 20px;
+  border: thin solid Beige;
+  background-color: rgba(215,193,160,0.4);
+  height: 40%;
+  font-size: 15px
+  }
+
+#rightdiv{
+  background-color: white;
+  display: block;
+  padding-left: 50px;
+  width:70%
+}
+
+#rightrow1 {
+  width: 90%;
+  display: block;
+  margin-top: 40px;
+  margin-left: 10px;
+  border: thin solid Beige;
+  background-color: rgba(215,193,160,0.4);
+  height: 90%;
+  font-size: 13px
+  }
+
+#tweets{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 10px;
+  border: thin solid Beige;
+  background-color: white;
+  height: 20%;
+  font-size: 13px;
+}
+textarea {
+ resize: none;
+ }
