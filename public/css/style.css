@@ -54,23 +54,17 @@ flex-grow: 2;
   align-items: flex-start;
   justify-content: space-around;*/
 }
-/*
-#user {
-  margin-left: 2%;
-  display: flex;
-  flex-direction: row;;
-  justify-content: space-between ;
-  width: 95%;
-  height: 150px;
-}*/
+
 #row1 {
   width: 80%;
   display: block;
   margin-top: 100px;
-  margin-left: 20px;
+  margin-left: 10px;
   border: thin solid Beige;
   background-color: rgba(215,193,160,0.4);
-  height: 20%
+  height: 20%;
+  min-height: 120px;
+  min-width: 180px
   }
 
 #img{
@@ -106,15 +100,16 @@ flex-grow: 2;
   width: 80%;
   display: block;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 10px;
   border: thin solid Beige;
   background-color: rgba(215,193,160,0.4);
   height: 40%;
-  font-size: 15px
+  font-size: 15px;
+  min-width: 180px;
+  min-height: 180px;
   }
 
 #rightdiv{
-  background-color: white;
   display: block;
   padding-left: 50px;
   width:70%
@@ -127,21 +122,37 @@ flex-grow: 2;
   margin-left: 10px;
   border: thin solid Beige;
   background-color: rgba(215,193,160,0.4);
-  height: 90%;
   font-size: 13px
   }
 
 #tweets{
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 40px;
   margin-left: 10px;
   border: thin solid Beige;
-  background-color: white;
-  height: 20%;
+  height: 10%;
   font-size: 13px;
+  background-color:rgba(215,193,160,0.6)
 }
+
+#postform{
+  height: 80px;
+  placeholder: "Write message here, max 255 characters";
+
+}
+
+#tweets_1{
+  display: block;
+  float: left;
+  margin-left: 20px
+}
+#content{
+
+
+}
+
 textarea {
  resize: none;
  }
