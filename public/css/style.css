@@ -1,5 +1,4 @@
-
-  html {
+html {
   font-weight: 100;
   color: black;
 }
@@ -44,15 +43,19 @@ flex-wrap:  nowrap;
 flex-grow: 2;
 }
 
+@media all and (max-width: 600px) {
 #leftdiv {
+  display: none;
   /*background-color: white;*/
   margin-top: 20px;
   margin-left: 30px;
-  display: inline-block;
-  width: 25%;
+  /*display: inline-block;*/
+  /*width: 25%;*/
   /*flex-direction:row;
   align-items: flex-start;
   justify-content: space-around;*/
+}
+
 }
 
 #row1 {

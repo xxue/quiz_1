@@ -25,7 +25,7 @@ router.get('/dash', function (req, res) {
  router.post('/dash', function(req, res){
    let params = req.body;
    let cookies = req.cookies;
-  
+  // i, cookies[i];
 
    res.cookie( `${params.user}`, params.tweet, {maxAge : 2592000000} );
    res.redirect('/dash');

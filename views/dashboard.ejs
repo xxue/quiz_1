@@ -1,6 +1,6 @@
 <%- include('./partials/header') %>
   <div class="container1">
-    <div id="leftdiv">
+    <div id="leftdiv" >
       <div id="row1">
         <div id="img">
           <img src="img/breath_jt.jpg" width = "80px";
@@ -36,30 +36,9 @@
           <input type="submit" name="submit"></input>
         </form>
 
-        <!-- <div class="posting">
-        <% for (let i in cookies) { %>
-          <div id = "tweets">
-            <div>
-              <img src = "img/puzzle_jt.jpg" width="30" height="30">
-            </div>
-            <div id = "tweets_1">
-              <div id = "user">
-                  <strong><%= i %> posted :</strong>
-              </div>
-              <div id="content">
-                  <strong><%= cookies[i] %></strong>
-              </div>
-              <div id="date">
-                  <%= date %>
-              </div>
-          </div>
-      </div>
-      <% } %>
-    </div> -->
+
 
   <div class="posting">
-
-
     <% for (i = Object.keys(cookies).length; i >= Object.keys(cookies).length - 4; i--){ %>
       <div id = "tweets">
       <div>
